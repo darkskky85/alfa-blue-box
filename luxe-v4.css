@@ -1,0 +1,128 @@
+/* ALFA BLUE BOX — ATELIER 04 / Architectural luxury rebrand
+   Main hero photograph stays exactly as in V3. 3D scene is a live construction model.
+   Web fonts enhance the site when online; local Arabic font fallbacks remain available. */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+:root{--gold:#ceb08a;--gold2:#efd7b0;--cream:#f0ece4;--navy:#0d1718;--navy2:#17201f;--ink:#202623;--muted:#9eaaa3;--max:1480px}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans Arabic','Noto Sans Arabic',Tahoma,sans-serif;background:#101918;color:#1b2421;-webkit-font-smoothing:antialiased}
+::selection{background:#c6a783;color:#07100e}
+.site-header{height:96px;background:rgba(9,17,17,.55);border-color:#efdeb52b;box-shadow:none;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.site-header.scrolled{background:rgba(10,20,19,.96);border-color:#ccae8129;height:76px}
+.brand-type strong{font-family:'IBM Plex Sans Arabic','Noto Kufi Arabic',sans-serif;font-weight:600;font-size:17px;color:#eeeae1}
+.brand-type small{font-family:Manrope,Arial,sans-serif;font-size:8px;letter-spacing:1.2px;color:#d3c7b3}
+.primary-nav a{font-family:'IBM Plex Sans Arabic','Noto Sans Arabic',sans-serif;font-weight:500;font-size:12px;letter-spacing:.15px}
+.primary-nav a:hover,.primary-nav a.active{color:#efdbb8}
+.nav-contact{background:#c9a981;color:#101717;border-color:#c9a981;font-weight:650;border-radius:0;min-width:135px;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.nav-contact:hover{background:#e5caa3;box-shadow:0 8px 36px #0005}
+.lang-switch{font-family:Manrope,Arial,sans-serif;letter-spacing:1.5px;color:#e9d8be}
+.hero-signature{background:#101918}
+/* User-approved picture intentionally unchanged */
+.hero-signature .hero-photo{background-image:url('assets/signature-tower.webp');background-size:cover;background-position:58% 50%;filter:saturate(.82) contrast(1.07)}
+.hero-scrim{background:linear-gradient(270deg,rgba(9,18,18,.91) 0%,rgba(13,23,23,.72) 28%,rgba(10,17,18,.12) 67%,rgba(9,19,19,.04) 100%),linear-gradient(0deg,#0b1718e8,transparent 34%,transparent 76%,#0b17185f)}
+.hero-signature .hero-inner{padding-top:112px}
+.hero-signature .hero-copy{max-width:770px}
+.hero-kicker-top{top:139px;letter-spacing:2.9px;color:#e7dac9ad;font-family:Manrope,Arial,sans-serif}
+.hero-kicker-top span:first-child{color:#ead0a8}
+.hero-kicker-top i,.eyebrow-line{background:#d8b88c}
+.hero-signature .hero-eyebrow{font-family:'IBM Plex Sans Arabic',sans-serif;font-size:13px;letter-spacing:.3px;color:#e8d0a9;margin-bottom:30px}
+.hero-signature h1{font-family:'IBM Plex Sans Arabic','Noto Kufi Arabic',sans-serif;font-weight:600;font-size:clamp(51px,5.45vw,90px);line-height:1.23;letter-spacing:-3.2px;text-shadow:0 8px 35px #0009}
+.hero-signature h1 span{font-weight:600;color:#fffaf2}
+.hero-signature h1 em{font-family:'Amiri','Noto Naskh Arabic',serif;font-weight:700;font-style:normal;font-size:1.12em;letter-spacing:-1.3px;color:#ead0a4;display:block;margin-top:-6px;line-height:1.26}
+.hero-signature .hero-description{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:400;color:#efe8dd;max-width:565px;font-size:15px;line-height:2.14;margin:21px 0 34px}
+.hero-signature .button{min-height:59px;border-radius:0;font-size:12px;font-weight:600;min-width:210px;transition:transform .3s ease,background .3s ease,color .3s ease}
+.hero-signature .button:hover{transform:translateY(-4px)}
+.hero-signature .button-gold{background:#d4b68d;color:#111b19;box-shadow:0 10px 36px #0004}
+.hero-signature .button-outline{background:rgba(11,24,24,.28);border:1px solid #e6d7bd73;color:#fff7eb;backdrop-filter:blur(12px)}
+.hero-signature .hero-footer{border-top:1px solid #e1d4bc56;padding-bottom:30px;background:linear-gradient(0deg,#0711101a,transparent)}
+.hero-signature .data-label{color:#d6d3c9;font-family:'IBM Plex Sans Arabic',sans-serif;font-size:11px}
+.hero-signature .hero-data strong{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:600;color:#faf7ee;font-size:19px}
+.hero-image-note{color:#d8d1c5ba;letter-spacing:1.2px}
+.page-progress span{background:#c9a77d!important}
+/* Light editorial sections: warm limestone/ivory instead of corporate white and blue. */
+.section-pad{padding-top:148px;padding-bottom:148px}
+.intro-section{background:#efede7}
+.services-section{background:#f9f7f2}
+.sectors-section{background:#eae7df}
+.method-section{background:#f6f3ec}
+.statement-section{background:#1a2421}
+.value-section{background:radial-gradient(ellipse at 22% 23%,#283430 0%,#111b19 60%,#0b1413 100%)}
+.section-kicker{font-family:Manrope,'IBM Plex Sans Arabic',sans-serif;color:#a07b4e;letter-spacing:1.05px;font-size:11px}
+.section-title{font-family:'IBM Plex Sans Arabic','Noto Sans Arabic',sans-serif;font-size:clamp(41px,4.2vw,72px);font-weight:600;line-height:1.42;letter-spacing:-2.2px;color:#192522}
+.section-title em{font-family:'Amiri','Noto Naskh Arabic',serif!important;font-size:1.18em;letter-spacing:-.8px;font-style:normal!important;color:#a27c50!important;font-weight:700}
+.section-copy,.section-head p,.intro-content>p{color:#59635e;line-height:2.18;font-weight:400}
+.service-card{background:#f4f1ea;border:1px solid #d3c9b827;box-shadow:0 12px 30px #1d2c2310}
+.service-card:hover{box-shadow:0 34px 60px #14221b1f;transform:translateY(-7px)}
+.service-top{color:#a58154}
+.service-text h3{font-weight:600;font-family:'IBM Plex Sans Arabic',sans-serif;color:#222b27}
+.service-text p{color:#68746d;line-height:2.1}
+.sector-list>div{border-color:#a6a18c55}
+.sector-visual img{filter:saturate(.7)}
+.method-card{background:#fffcf6;border-color:#c4ae8840}
+.method-card .step-id{color:#a98759}
+.method-card h3{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:600}
+.about-pillars strong,.value-tags span{font-family:'IBM Plex Sans Arabic',sans-serif}
+.value-section .section-title{color:#f4eee3}
+.statement-content p{font-family:'Amiri','Noto Naskh Arabic',serif;font-size:clamp(35px,3.5vw,60px);line-height:1.5;font-weight:700}
+/* CONSTRUCTION JOURNEY: realistic open-frame architecture + crane in realtime WebGL */
+.signature-sequence{height:410vh;background:#101917}
+.signature-sequence .construction-sticky{background:radial-gradient(ellipse at 70% 48%,#3c3931 0%,#222927 33%,#101916 75%,#0b1412 100%)}
+.signature-sequence .construction-sticky:before{background:linear-gradient(90deg,transparent 49.9%,#d6b88b10 50%,transparent 50.1%),linear-gradient(#c0ad8b0b 1px,transparent 1px);background-size:100% 100%,100% 73px}
+.signature-sequence .construction-sticky:after{background:radial-gradient(ellipse at 69% 45%,transparent 25%,#0a1412aa 86%);opacity:.54}
+.signature-sequence .sequence-eyebrow{color:#e4c193}
+.signature-sequence .sequence-copy h2{font-family:'IBM Plex Sans Arabic',sans-serif;font-size:clamp(44px,4.55vw,75px);font-weight:600;letter-spacing:-1.8px;line-height:1.28;color:#f7f3ea}
+.signature-sequence .sequence-copy h2 em{font-family:'Amiri','Noto Naskh Arabic',serif;color:#e7c597;font-size:1.21em;letter-spacing:0;font-weight:700}
+.signature-sequence .sequence-copy>p{color:#d0d1c9;line-height:2.1;font-size:14px}
+.signature-sequence .sequence-current{border-color:#cfb1855c;margin-top:32px;padding:20px 0}
+.signature-sequence .sequence-stage-num{color:#dabb8e}
+.signature-sequence .sequence-current-copy>span{color:#d3bd9d}
+.signature-sequence .sequence-current-copy h3{font-weight:600;font-size:18px;color:#fff9eb}
+.signature-sequence .sequence-current-copy p{color:#bac7be}
+.signature-sequence .sequence-viewer{height:min(78vh,850px);margin-inline-end:-3%;isolation:isolate}
+.signature-sequence .sequence-viewer::before{content:'';position:absolute;z-index:1;inset:6%;border:1px solid #dbc29924;pointer-events:none;clip-path:polygon(0 0,11% 0,11% 1px,89% 1px,89% 0,100% 0,100% 100%,89% 100%,89% calc(100% - 1px),11% calc(100% - 1px),11% 100%,0 100%)}
+.signature-sequence .sequence-viewer::after{content:'ACTIVE SITE / STRUCTURAL STUDY';position:absolute;z-index:3;right:6%;top:8%;color:#e7c99a9e;font:9px Manrope,Arial,sans-serif;letter-spacing:2.2px;direction:ltr}
+.signature-sequence .sequence-halo{background:radial-gradient(circle at center,#a2794f2c,transparent 65%)}
+.signature-sequence .sequence-gridlines{border-color:#d3b68e20;background:repeating-radial-gradient(circle,transparent 0 115px,#d9c1a21e 116px,transparent 117px)}
+.signature-sequence .sequence-viewer canvas{filter:drop-shadow(0 28px 34px #0008)}
+.signature-sequence .sequence-fallback{background-image:url('assets/construction-fallback.webp');background-size:cover;background-repeat:no-repeat;background-position:center;mask-image:radial-gradient(ellipse at center,#000 37%,transparent 77%)}
+.signature-sequence .sequence-model-label{color:#d8d3c6}
+.signature-sequence .sequence-timeline-bar{background:#8f82705c}
+.signature-sequence .sequence-point.active{color:#f1d0a0}
+.signature-sequence .sequence-point:hover{color:#f6dcad}
+.signature-sequence .sequence-point strong{font-weight:500}
+.signature-sequence .sequence-timeline-bar>div{background:#d4b183}
+.signature-sequence .sequence-next{color:#efcba0;border-color:#ccaa7b}
+/* Contact — information only. No form/card and no fake business figures. */
+.contact-signature{background:#101a18;border-top:1px solid #c9ad8326}
+.contact-main-top h2{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:600;letter-spacing:-2.1px}
+.contact-main-top h2 em{font-family:'Amiri','Noto Naskh Arabic',serif;font-weight:700;letter-spacing:0;color:#e5c493;font-size:1.16em}
+.contact-main-top>p{color:#bfc5ba;font-weight:400}
+.contact-line{border-color:#d4c6a634}
+.contact-line-number{color:#d9bd91}
+.contact-line-label{color:#b5b9ae;font-weight:400}
+.contact-line strong{font-family:'IBM Plex Sans Arabic',Manrope,sans-serif;font-weight:500;color:#f5f1e7}
+.contact-line-arrow{color:#d8be94}
+.contact-line:not(.contact-line-static):hover{background:#dfc49d0c}
+.site-footer{background:#0a1211}
+@media(min-width:1350px){.hero-signature h1{font-size:clamp(61px,5.4vw,91px)}}
+@media(max-width:1100px){.hero-signature h1{font-size:clamp(46px,5.8vw,69px)}.hero-signature .hero-description{max-width:490px}.signature-sequence .sequence-copy h2{font-size:52px}}
+@media(max-width:880px){.hero-signature .hero-inner{padding-bottom:155px}.hero-signature .hero-copy{max-width:630px}.hero-signature h1{font-size:clamp(45px,7.8vw,65px)}.hero-signature h1 span,.hero-signature h1 em{white-space:normal}.hero-scrim{background:linear-gradient(0deg,#0b1715f2 0%,#0d1a18bd 48%,#101c1933 100%)}.signature-sequence .sequence-viewer{min-height:290px}.signature-sequence .sequence-copy h2{font-size:43px}}
+@media(max-width:600px){
+ .site-header{background:#0e1917b8}.hero-signature .hero-photo{background-position:61% center;filter:saturate(.88)}
+ .hero-signature h1{font-size:clamp(33px,8.6vw,44px);letter-spacing:-1.25px;line-height:1.3}
+ .hero-signature h1 em{font-size:1.15em;line-height:1.25;margin-top:3px}
+ .hero-signature .hero-description{font-size:12px;line-height:2.1}
+ .hero-signature .button{font-size:10px;min-width:0;min-height:51px;padding:13px 11px}
+ .hero-signature .hero-copy{bottom:157px}
+ .hero-signature .hero-data strong{font-size:13px}.hero-signature .hero-data strong small{font-size:9px}
+ .section-title{font-size:clamp(34px,8vw,48px);letter-spacing:-.7px}
+ .section-title em{font-size:1.17em}
+ .signature-sequence .construction-sticky{min-height:630px}
+ .signature-sequence .sequence-copy h2{font-size:clamp(30px,7.7vw,41px);line-height:1.2}
+ .signature-sequence .sequence-copy>p{font-size:10px}
+ .signature-sequence .sequence-viewer{height:38vh;min-height:225px;width:109%}
+ .signature-sequence .sequence-viewer::after{font-size:7px;letter-spacing:1.1px}
+ .contact-main-top h2{font-size:45px;letter-spacing:-1.0px}
+ .contact-line strong{font-size:16px}
+ .section-pad{padding:98px 0}
+}
+@media(prefers-reduced-motion:reduce){.hero-photo{animation:none!important}html{scroll-behavior:auto}}

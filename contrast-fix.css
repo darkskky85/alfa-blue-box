@@ -1,0 +1,87 @@
+/* Alfa Blue Box — Contrast/accessibility correction (02 Nov 2026)
+   Fix only text and border contrast of existing V4 layout; leave all photos,
+   animation, 3D code, positioning and brand assets untouched. */
+
+/* A gold headline on cream is fine; a white one is not. The previous
+   .services-section .section-title/.method-section .section-title selector in
+   styles.css overrode the later generic dark heading and made it white. */
+.services-section .section-title,
+.method-section .section-title,
+.sectors-section .section-title,
+.intro-section .section-title {
+  color:#1c2927;
+}
+.services-section .section-title em,
+.method-section .section-title em,
+.sectors-section .section-title em,
+.intro-section .section-title em {
+  color:#90632f !important;
+}
+.intro-section,
+.services-section,
+.sectors-section,
+.method-section {
+  color:#192826;
+}
+.intro-section .section-kicker,
+.services-section .section-kicker,
+.sectors-section .section-kicker,
+.method-section .section-kicker,
+.intro-section .kicker-num,
+.services-section .kicker-num,
+.sectors-section .kicker-num,
+.method-section .kicker-num {
+  color:#815c2e;
+}
+.services-section .section-head p,
+.method-section .section-head p,
+.sectors-section .section-head p,
+.intro-section .section-copy,
+.intro-section .intro-content > p {
+  color:#43514c;
+}
+.services-section .service-card h3 { color:#1e2a27; }
+.services-section .service-card p { color:#4d5b55; }
+.services-section .service-en { color:#725734; }
+.method-section .method-card h3 { color:#1d302a; }
+.method-section .method-card p { color:#4c5c55; }
+
+/* Quote: old CSS inherited dark ink from when this area had a GOLD background;
+   now the background is green-black so the same ink was near-invisible. */
+.statement-section {
+  background:#0b2830;
+  color:#f7f5ef;
+}
+.statement-section .statement-content p {
+  color:#f7f5ef;
+  text-shadow:0 2px 16px rgba(0,0,0,.24);
+}
+.statement-section .statement-caption,
+.statement-section .statement-line {
+  color:#e1cba8;
+}
+.statement-section .quote-mark { color:#dcb783; }
+.statement-section .statement-graphic { color:rgba(209,177,126,.13); }
+
+/* Values: previous border labels and body inherited dark text from light theme. */
+.value-section { color:#f8f5ed; }
+.value-section .value-copy > p {
+  color:#d5ddd8;
+}
+.value-section .section-title { color:#f8f4e9; }
+.value-section .section-title em { color:#e8c393 !important; }
+.value-section .section-kicker,
+.value-section .kicker-num { color:#e2bd88; }
+.value-section .value-tags span {
+  color:#f7f5ee;
+  background:rgba(236,223,198,.045);
+  border-color:rgba(236,223,198,.67);
+}
+.value-section .value-tags span:hover {
+  background:rgba(236,223,198,.13);
+  border-color:#e2c89b;
+}
+
+/* Preserve accessible colors in both RTL Arabic and LTR English. */
+html[dir="ltr"] .statement-section .statement-content p,
+html[dir="ltr"] .value-section .value-tags span { color:#f7f5ee; }
